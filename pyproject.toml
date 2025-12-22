@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rag-metadata-extractor"
+version = "0.0.1"
+description = "LLM-based metadata extraction for RAG pipelines."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Leonid Kurik" }]
+
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/<your-username>/rag-metadata-extractor"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rag_metadata_extractor"]
